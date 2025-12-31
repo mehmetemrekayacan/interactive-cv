@@ -1,0 +1,76 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Print Styles for CV */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  /* Ensure background colors print */
+  section {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  /* Remove link styling in print */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  
+  /* Prevent page breaks inside sections - but allow for last items */
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Allow breaking for last section if needed */
+  section:last-child {
+    page-break-inside: auto;
+    break-inside: auto;
+  }
+  
+  /* Ensure list items don't break awkwardly */
+  li {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  /* Prevent orphans and widows */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+  
+  /* Ensure proper font rendering */
+  * {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  
+  /* Ensure CV container fills page */
+  .min-h-screen {
+    min-height: 100vh;
+    height: 100vh;
+  }
+}
