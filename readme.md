@@ -27,12 +27,12 @@
 
 ### Standard CV
 <p align="center">
-  <img src="./screenshots/Cv.png" alt="Standard CV" width="600"/>
+   <img src="./screenshots/CV.jpg" alt="Standard CV" width="600"/>
 </p>
 
 ### Erasmus CV
 <p align="center">
-  <img src="./screenshots/ErasmusCV.png" alt="Erasmus CV" width="600"/>
+   <img src="./screenshots/ErasmusCV.jpg" alt="Erasmus CV" width="600"/>
 </p>
 
 ## 🚀 Quick Start
